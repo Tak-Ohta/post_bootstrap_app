@@ -1,6 +1,5 @@
 # README
-テキスト：メッセージ投稿アプリ（その1・CRUD処理）
-「詳細(show)」から
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
