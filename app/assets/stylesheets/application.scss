@@ -22,7 +22,36 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 
  .field_with_errors { 
   display: contents; /* ボックスの要素を残しつつ周囲のボックスを省略する。例： <div>ボックス</div> → ボックス */
-  input { /* input要素のスタイルを属性値で指定し分ける */
-    border: 2px solid red;
+  input, textarea { /* input要素のスタイルを属性値で指定し分ける */
+    @extend .is-invalid;
   }
  }
+
+// 共通
+.base-container {
+  @extend .container-fluid;
+  max-width: var(--breakpoint-lg);
+  padding: 30px 15px;
+}
+
+body {
+  padding-top: 56px;
+}
+
+// テーブル
+th, td {
+  vertical-align: middle !important; // 合わせて使用したプロパティを最優先で使用する
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+// フラッシュ
+.alert-notice {
+  @extend .alert-success;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
