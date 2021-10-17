@@ -22,8 +22,8 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 
  .field_with_errors { 
   display: contents; /* ボックスの要素を残しつつ周囲のボックスを省略する。例： <div>ボックス</div> → ボックス */
-  input { /* input要素のスタイルを属性値で指定し分ける */
-    border: 2px solid red;
+  input, textarea { /* input要素のスタイルを属性値で指定し分ける */
+    @extend .is-invalid;
   }
  }
 
