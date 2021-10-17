@@ -37,3 +37,12 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 body {
   padding-top: 56px;
 }
+
+// テーブル
+th, td {
+  vertical-align: middle !important; // 合わせて使用したプロパティを最優先で使用する
+}
+
+.break-word {
+  word-break: break-word;
+}
